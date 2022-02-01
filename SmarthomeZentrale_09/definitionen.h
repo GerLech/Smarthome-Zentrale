@@ -1,0 +1,1 @@
+#define MQTT_MAX_PACKET_SIZE 16384

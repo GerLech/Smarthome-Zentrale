@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+    <title></title>
+    <style type='text/css'>
+body {
+  background-color: silver;
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+}
+button {
+  border-radius: 5px; 
+  border-style: solid; 
+  margin: 10px; 
+  background-color: #cccccc; 
+  color: black; 
+  border-color: #666666;
+}
+</style></head>
+  <body>
+    <div style='border-style: solid; width: 300px; border-radius: 10px; background-color: #e1e1e1;'>
+      <h2>Konfigurationsdateien</h2>
+      <form name='upload' method='post' enctype='multipart/form-data'>
+        <input name='file' type='file' accept='application/json'>
+        <div style='height:60px;'> <button name='upwidgets' formaction='/upwidgets'>
+            Upload Widgets </button> <button name='uprules' formaction='/uprules'>
+            Upload Rules </button> </div>
+      </form><form name = 'download' method='post'>
+        <div style='height:60px;'> <button name='widgets' type='submit' formtarget='_blank'>
+            Download Widgets </button> <button name='rules' type='submit' formtarget='_blank'>
+            Download Rules </button> </div>
+      </form>
+    </div>
+  </body>
+</html>

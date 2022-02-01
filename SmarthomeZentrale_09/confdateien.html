@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style type="text/css">
+body {
+  background-color: silver;
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+}
+button {
+  border-radius: 5px; 
+  border-style: solid; 
+  margin: 10px; 
+  background-color: #cccccc; 
+  color: black; 
+  border-color: #666666;
+}
+
+</style></head>
+  <body>
+    <div style="border-style: solid; width: 300px; border-radius: 10px; background-color: #e1e1e1;">
+      <h2>Konfigurationsdateien</h2>
+      <form name="main"> <input name="file" form="main" type="file">
+        <div style="height:60px;"> <button name="widgets" type="submit" formaction="/upwidgets">
+            Upload Widgets </button> <button name="rules" type="submit" formaction="/uprules">
+            Upload Rules </button> </div>
+        <div style="height:60px;"> <button name="widgets" type="submit" formtarget="_blank">
+            Download Widgets </button> <button name="rules" type="submit">
+            Download Rules </button> </div>
+      </form>
+    </div>
+  </body>
+</html>
